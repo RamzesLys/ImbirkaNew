@@ -1,0 +1,22 @@
+@font-face {
+    font-family: BanderaPro;
+    src: url(../fonts/BanderaPro-Bold.ttf);
+    src: url(../fonts/BanderaPro-Bold.eot);
+    src: url(../fonts/BanderaPro-Bold.woff);
+    src: url(../fonts/BanderaPro-Bold.woff2)
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(../fonts/Orbitron-Bold.ttf)
+}
+
+h1 {
+    font-family: 'BanderaPro';
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Orbitron';
+    font-size: 24px;
+}
