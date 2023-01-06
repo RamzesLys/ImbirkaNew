@@ -108,7 +108,35 @@ body {
 	color:	#B96969;
 }
 
+.header_social-block {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em
+}
+
 [name="social_"] {
-	color: #B96969;
 	cursor: pointer;
+  border-radius: 1em;
+}
+
+.header_social-block img {
+  border-radius: 1em;
+  box-shadow: #000 0.5em 0.5em 0.5em;
+}
+
+.header_phone {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  background-color: #B96969;
+  font-family: 'BanderaPro', serif;
+	font-size: 1.5em;
+	color:	#F4D7CA;
+  gap: 1em;
+  padding: 0.2em;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.2em;
+  letter-spacing: 0.2em;
 }
