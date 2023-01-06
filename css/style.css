@@ -220,3 +220,19 @@ body {
   background-attachment: fixed;
 }
 
+.slider_wrapper {
+  padding: 3em 0;
+  position: relative;
+}
+
+.slider_img {
+  position: absolute;
+  z-index: 1;
+}
+
+.slider_img.active {
+  z-index: 2;
+  margin: 0 auto;
+  
+}
+
