@@ -228,6 +228,7 @@ body {
 .slider_img {
   position: absolute;
   z-index: 1;
+  width: ;
 }
 
 .slider_img.active {
