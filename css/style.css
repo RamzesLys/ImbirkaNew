@@ -136,7 +136,7 @@ body {
   justify-content: space-between;
   border-radius: 0.3em;
   letter-spacing: 0.15em;
-  box-shadow: #B96969 0.3em 0.3em 0.5em;
+  box-shadow: #B96969 0.5em 0.5em 1em;
 }
 
 .header_phone img {
@@ -193,8 +193,15 @@ body {
 }
 
 .img_gingerBread {
+  
+  transition: all 5s;
+}
+
+
+.img_gingerBread {
   position: absolute;
-  left: 5em;
+  right: -100%;
+  /* left: 5em; */
   top: 1em;
   transform: rotate(-25deg);
   width: 12em;
@@ -223,7 +230,54 @@ body {
 .slider_wrapper {
   padding: 3em 0;
   position: relative;
+
 }
+
+.slider_list {
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider_button {
+  position: absolute;
+  bottom: 10%;
+  background-image: url(../img/ButtonNoise.png);
+  background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-color: #B96969;
+  width: 5em;
+  height: 5em;
+  opacity: 0.2;
+  border-radius: 5em;
+  backdrop-filter: blur(1em);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider_button::before {
+  content: url(../img/ArrowLeft.svg);
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.slider_button:first-child {
+  left: 0;
+  box-shadow: #F4D7CA 0.5em 0.5em 1em;
+}
+
+.slider_button:last-child {
+  right: 0;
+  transform: rotate(180deg);
+  box-shadow: #F4D7CA -0.5em -0.5em 1em;
+}
+
+
 
 .slider_img {
   position: absolute;
@@ -234,6 +288,9 @@ body {
 .slider_img.active {
   z-index: 2;
   margin: 0 auto;
-  
 }
+
+
+
+
 
