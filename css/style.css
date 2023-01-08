@@ -192,22 +192,24 @@ body {
   width: 50%;
 }
 
-.img_gingerBread {
-  
-  transition: all 5s;
-}
+
 
 
 .img_gingerBread {
   position: absolute;
-  right: -100%;
-  /* left: 5em; */
+  right: -55em;
   top: 1em;
   transform: rotate(-25deg);
   width: 12em;
- 
+  transition: all 7s;
+  overflow: hidden;
 }
 
+.img_gingerBread.position {
+  left: 5em;
+  
+  
+}
 .img_mochi {
   position: absolute;
   right: 0em;
