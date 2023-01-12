@@ -1,11 +1,6 @@
-const gingerBread = document.getElementById('ginger-bread');
-// const position = () => {
-// 	setTimeout = (() => {
-// 		gingerBread.classList.add('position'), 1000)
-// 		}
-// }
 
-// position()
+//POSITION
+const gingerBread = document.getElementById('ginger-bread');
 
 const position = () => {
 	setTimeout(() => {
@@ -13,33 +8,24 @@ const position = () => {
 	}, 1000);
 }
 
-position()
+position();
 
-// function first () {
-// 	setTimeout( function () {
-// 		gingerBread.classList.add('position');
-// 	}, 1000 );
-// 	}
-	// first()
-
-
-
-
-// gingerBread.classList.add(position).setTimeout(2000)
-// const gingerBreadPosition = (gingerBread, position) => {
-// ;
-// setTimeout(2000)
-// }
-// gingerBreadPosition()
-// gingerBread.style.rotate = -50 + 'deg';
-
-
-
-
-
-const [btnLeft, btnRight] = document.getElementsByClassName('slider_button');
+//SLIDER
+const sliderWrapper = document.querySelector('.slider_wrapper');
 const sliderList = document.getElementById('slider-list');
-console.log('>>>', sliderList, btnLeft, btnRight);
+const slides = document.querySelectorAll('.slide');
+const [btnLeft, btnRight] = document.getElementsByClassName('slider_button');
+
+const init = () => {
+	for (let i = 0; i < slides.length; i++) {
+		const slide = slides[i];
+		slide.dataset.order = i;
+	}
+} 
+
+init()
+
+
 
 btnLeft.onclick = () => {
     console.log ('Clicked');
