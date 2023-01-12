@@ -148,7 +148,6 @@ body {
 
 .content {
   display: flex;
-
 }
 
 .slogan_block {
@@ -278,8 +277,6 @@ body {
   transform: rotate(180deg);
   box-shadow: #F4D7CA -0.5em -0.5em 1em;
 }
-
-
 
 .slider_img {
   position: absolute;
