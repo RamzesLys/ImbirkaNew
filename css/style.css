@@ -93,7 +93,7 @@ body {
 }
 
 .main_logo {
-
+  width: 5.5em;
 }
 
 .header_desc {
@@ -109,7 +109,7 @@ body {
 }
 
 .header_social-block a img {
-  width: 40px;
+  width: 2.5em;
 }
 
 [name="social_"] {
@@ -282,7 +282,7 @@ body {
 .slider_img {
   position: absolute;
   z-index: 1;
-  width: ;
+
 }
 
 .slider_img.active {
