@@ -148,6 +148,7 @@ body {
 
 .content {
   display: flex;
+  padding: 3em 0;
 }
 
 .slogan_block {
@@ -156,7 +157,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 50%;
-  padding: 3em 0;
+  /* padding: 3em 0; */
 }
 
 .slogan {
@@ -191,24 +192,24 @@ body {
   width: 50%;
 }
 
-
-
-
 .img_gingerBread {
   position: absolute;
   right: -55em;
   top: 1em;
-  transform: rotate(-25deg);
+  transform: rotate(10deg);
   width: 12em;
-  transition: all 7s;
+  transition: 7s;
   overflow: hidden;
+  opacity: 1;
 }
 
-.img_gingerBread.position {
-  left: 5em;
-  
-  
+.position {
+  opacity: 1;
+  transition: 5s;
+  left: 2em;
+  transform: rotate(-25deg);
 }
+
 .img_mochi {
   position: absolute;
   right: 0em;
