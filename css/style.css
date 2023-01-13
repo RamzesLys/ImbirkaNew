@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -200,7 +200,7 @@ body {
   width: 12em;
   transition: 7s;
   overflow: hidden;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .position {
@@ -224,41 +224,53 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
   background-attachment: fixed;
 }
 
 .slider_wrapper {
-  width: 100%;
-  height: 20em;
-  padding: 3em 0;
+  margin: 3em 0;
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider_visible {
+  position: relative;
+  width: 600px;
+  height: 385px;
+  overflow: hidden;
+  margin: 1em 0;
 }
 
 .slider_list {
-  position: relative;
-  width: 90%;
+  position: absolute;
+  transition: .5s;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+
+  /* overflow: hidden;
+  width: 600px;
+  height: 385px;
+  margin: 0 auto; */
 }
 
 .slide {
-  position: absolute;
-  width: 50%;
-  height: 30vh;
+  width: 600px;
+  height: 385px;
   background-color: rgb(225, 229, 229);
   border: 2px solid #000;
+  border-radius: 1em;
   text-align: center;
   line-height: 100px;
   font-size: 1em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 
 .slider_button {
-  /* position: absolute; */
-  bottom: 10%;
   background-image: url(../img/ButtonNoise.png);
   background-position: top center;
 	background-size: cover;
