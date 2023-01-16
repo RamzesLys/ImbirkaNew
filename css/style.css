@@ -195,16 +195,16 @@ body {
 
 .img_gingerBread {
   position: absolute;
-  left: 55em;
-  transform: rotate(60deg);
+  left: 75em;
+  transform: rotate(150deg);
   width: 12em;
-  transition: 7s;
+  transition: 5s;
   opacity: 0.5;
 }
 
 .position {
   opacity: 1;
-  transition: 7s;
+  transition: 5s;
   left: 2em;
   transform: rotate(-25deg);
 }
