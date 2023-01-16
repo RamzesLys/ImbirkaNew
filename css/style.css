@@ -190,22 +190,21 @@ body {
 .img_block {
   position: relative;
   width: 50%;
+  /* overflow: hidden; */
 }
 
 .img_gingerBread {
   position: absolute;
-  right: -55em;
-  top: 1em;
-  transform: rotate(10deg);
+  left: 55em;
+  transform: rotate(60deg);
   width: 12em;
   transition: 7s;
-  overflow: hidden;
   opacity: 0.5;
 }
 
 .position {
   opacity: 1;
-  transition: 5s;
+  transition: 7s;
   left: 2em;
   transform: rotate(-25deg);
 }

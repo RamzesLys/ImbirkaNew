@@ -2,20 +2,24 @@
 //POSITION
 const gingerBread = document.getElementById('ginger-bread');
 
-// const position = () => {
-// 	setTimeout(() => {
-// 		gingerBread.classList.add('position')
-// 	}, 500);
-// }
-// position();
-
 const position = () => {
 	setTimeout(() => {
-		gingerBread.style.left = 2 + 'em';
-		gingerBread.style.opacity = 1;
-
+		gingerBread.classList.add('position')
 	}, 500);
 }
+position();
+
+// const position = () => {
+// 	setTimeout(() => {
+// 		gingerBread.style.left = '2' + 'em';
+// 		gingerBread.style.opacity = '1';
+// 		gingerBread.style.transform = 'rotate' + '(-25deg)';
+// 		gingerBread.style.transition = '10' + 's'
+		
+
+// 	}, 500);
+// }
+// position()
 
 //SLIDER
 const sliderList = document.getElementById('slider-list');
