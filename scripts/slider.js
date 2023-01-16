@@ -2,13 +2,20 @@
 //POSITION
 const gingerBread = document.getElementById('ginger-bread');
 
+// const position = () => {
+// 	setTimeout(() => {
+// 		gingerBread.classList.add('position')
+// 	}, 500);
+// }
+// position();
+
 const position = () => {
 	setTimeout(() => {
-		gingerBread.classList.add('position')
+		gingerBread.style.left = 2 + 'em';
+		gingerBread.style.opacity = 1;
+
 	}, 500);
 }
-
-position();
 
 //SLIDER
 const sliderList = document.getElementById('slider-list');
