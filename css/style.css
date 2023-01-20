@@ -247,10 +247,11 @@ body {
 
 .slider_list {
   position: absolute;
-  transition: .5s;
+  transition: .5s ease-in-out;
   display: flex;
   flex-direction: row;
   column-gap: 1em;
+  left: 0;
 }
 
 .slide {
