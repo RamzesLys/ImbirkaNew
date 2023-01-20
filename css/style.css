@@ -190,25 +190,21 @@ body {
 .img_block {
   position: relative;
   width: 50%;
-  /* overflow: hidden; */
 }
 
 .img_gingerBread {
   position: absolute;
-  /* left: 75em; */
   left: 2em;
   top: -30em;
   transform: rotate(150deg);
   width: 14em;
-  transition: 4s;
   opacity: 0.5;
   z-index: 2;
 }
 
 .position {
   opacity: 1;
-  transition: 4s;
-  /* left: 2em; */
+  transition: all 3s ease-in-out;
   top: 2em;
   transform: rotate(-25deg);
 }
@@ -217,13 +213,12 @@ body {
   position: absolute;
   right: -35em;
   bottom: 1em;
-  transition: 3s;
 }
 
 .position2 {
   right: 0em;
   bottom: 1em;
-  transition: 3s;
+  transition: all 2s ease-in-out;
 }
 
 /* SLIDER */
@@ -271,7 +266,6 @@ body {
   text-align: center;
   line-height: 100px;
   font-size: 1em;
-  /* margin: 0 auto; */
 }
 
 
@@ -314,7 +308,6 @@ body {
 .slider_img {
   position: absolute;
   z-index: 1;
-
 }
 
 .slider_img.active {
