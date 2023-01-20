@@ -1,11 +1,13 @@
 
 //POSITION
 const gingerBread = document.getElementById('ginger-bread');
+const mochi = document.getElementById('mochi');
 
 const position = () => {
 	setTimeout(() => {
-		gingerBread.classList.add('position')
-	}, 500);
+		gingerBread.classList.add('position');
+		mochi.classList.add('position2')
+	}, 300);
 }
 position();
 

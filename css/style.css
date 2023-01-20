@@ -195,25 +195,35 @@ body {
 
 .img_gingerBread {
   position: absolute;
-  left: 75em;
+  /* left: 75em; */
+  left: 2em;
+  top: -30em;
   transform: rotate(150deg);
   width: 14em;
-  transition: 5s;
+  transition: 4s;
   opacity: 0.5;
   z-index: 2;
 }
 
 .position {
   opacity: 1;
-  transition: 5s;
-  left: 2em;
+  transition: 4s;
+  /* left: 2em; */
+  top: 2em;
   transform: rotate(-25deg);
 }
 
 .img_mochi {
   position: absolute;
+  right: -35em;
+  bottom: 1em;
+  transition: 3s;
+}
+
+.position2 {
   right: 0em;
   bottom: 1em;
+  transition: 3s;
 }
 
 /* SLIDER */
@@ -250,11 +260,6 @@ body {
   display: flex;
   flex-direction: row;
   column-gap: 1em;
-
-  /* overflow: hidden;
-  width: 600px;
-  height: 385px;
-  margin: 0 auto; */
 }
 
 .slide {
