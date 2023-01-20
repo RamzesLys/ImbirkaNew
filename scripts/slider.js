@@ -30,7 +30,7 @@ const sliderContent = [
 		content: `слайд 4`
 	}, 
 	{
-		content: `слайд 1`
+		content: `слайд 5`
 	} 
 ];
 

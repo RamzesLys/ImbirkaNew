@@ -1,24 +1,24 @@
 @font-face {
-    font-family: BanderaPro;
-    src: url(../fonts/BanderaPro-Bold.ttf);
-    src: url(../fonts/BanderaPro-Bold.eot);
-    src: url(../fonts/BanderaPro-Bold.woff);
-    src: url(../fonts/BanderaPro-Bold.woff2)
+  font-family: BanderaPro;
+  src: url(../fonts/BanderaPro-Bold.ttf);
+  src: url(../fonts/BanderaPro-Bold.eot);
+  src: url(../fonts/BanderaPro-Bold.woff);
+  src: url(../fonts/BanderaPro-Bold.woff2)
 }
 
 @font-face {
-    font-family: Orbitron;
-    src: url(../fonts/Orbitron-Bold.ttf)
+  font-family: Orbitron;
+  src: url(../fonts/Orbitron-Bold.ttf)
 }
 
 h1 {
-   margin: 0;
+  margin: 0;
 }
 
 h2 {
-    font-family: 'Orbitron';
-    font-size: 24px;
-} */
+  font-family: 'Orbitron';
+  font-size: 24px;
+}
 
 *,
 *::before,
@@ -52,7 +52,6 @@ a {
 
 body {
 	/* max-width: 1440px; */
-
 }
 
 .wrapper {
@@ -74,10 +73,8 @@ body {
 	background-color:	#F4D7CA;
 	background-image: url(../img/BackgroundHeader.png);
 	background-position: top center;
-	/* background-size: cover; */
 	background-repeat: no-repeat;
 	width: 100%;
-	/* height: 100vh; */
   background-attachment: fixed;
 }
 
@@ -157,7 +154,6 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 50%;
-  /* padding: 3em 0; */
 }
 
 .slogan {
