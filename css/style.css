@@ -102,11 +102,14 @@ body {
 .header_social-block {
   display: flex;
   flex-direction: row;
-  gap: 1.5em
+  gap: 1.5em;
+  width: 28%;
+  
 }
 
 .header_social-block a img {
   width: 2.5em;
+  outline: 0.3em solid inherit;
 }
 
 [name="social_"] {
@@ -114,9 +117,13 @@ body {
   border-radius: 1em;
 }
 
-[name="social_"] img {
-	width: 100px;
+.header_social-block a img:hover {
+  width: 2.3em;
+  outline: 0.5em solid inherit;
+  transition: .3s ease-in-out;
 }
+
+
 
 .header_phone, .slogan_block-subscribe, .slogan_block-ordered {
   cursor: pointer;
@@ -200,7 +207,7 @@ body {
 
 .position {
   opacity: 1;
-  transition: all 3s ease-in-out;
+  transition: all 3s ease-out;
   top: 2em;
   transform: rotate(-25deg);
 }
@@ -214,7 +221,7 @@ body {
 .position2 {
   right: 0em;
   bottom: 1em;
-  transition: all 2s ease-in-out;
+  transition: all 2s ease-out;
 }
 
 /* SLIDER */
@@ -230,7 +237,7 @@ body {
 }
 
 .slider_wrapper {
-  margin: 3em 0;
+  margin: 3em 0 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -239,42 +246,42 @@ body {
 
 .slider_visible {
   position: relative;
-  width: 600px;
-  height: 385px;
+  width: 608px;
+  height: 450px;
   overflow: hidden;
   margin: 1em 0;
 }
 
 .slider_list {
   position: absolute;
-  transition: .5s ease-in-out;
+  transition: all .3s step-end;
   display: flex;
   flex-direction: row;
   column-gap: 1em;
   left: 0;
+  margin: 0 auto;
 }
 
 .slide {
   width: 600px;
-  height: 385px;
+  height: 450px;
   background-color: rgb(225, 229, 229);
-  border: 2px solid #000;
-  border-radius: 1em;
+  border: 1em solid #F4D7CA;
+  border-radius: 0.5em;
   text-align: center;
   line-height: 100px;
   font-size: 1em;
 }
-
 
 .slider_button {
   background-image: url(../img/ButtonNoise.png);
   background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
-  background-color: #B96969;
+  background-color: #F4D7CA;
   width: 5em;
   height: 5em;
-  opacity: 0.7;
+  opacity: 0.5;
   border-radius: 5em;
   backdrop-filter: blur(1em);
   cursor: pointer;
@@ -293,13 +300,13 @@ body {
 
 .slider_button:first-child {
   left: 0;
-  box-shadow: #F4D7CA 0.5em 0.5em 1em;
+  box-shadow: #000 0.5em 0.5em 1em;
 }
 
 .slider_button:last-child {
   right: 0;
   transform: rotate(180deg);
-  box-shadow: #F4D7CA -0.5em -0.5em 1em;
+  box-shadow: #000 -0.5em -0.5em 1em;
 }
 
 .slider_img {
@@ -312,6 +319,22 @@ body {
   margin: 0 auto;
 }
 
+.slider_dots-list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1em;
+}
+.slider_dot {
+  height: 0.4em;
+  width: 1.7em;
+  background-color: #F4D7CA;
+  border-radius: 0.4em;
+  box-shadow: #000 0.2em 0.2em 1em;
+  cursor: pointer;
+}
 
 
 

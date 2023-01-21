@@ -15,34 +15,48 @@ position();
 const sliderList = document.getElementById('slider-list');
 const slides = document.querySelectorAll('.slide');
 const [btnLeft, btnRight] = document.getElementsByClassName('slider_button');
+const [sliderVisible] = document.getElementsByClassName('slider_visible');
+
+// sliderVisible.style.width = sliderVisible.clientWidth;
+// slides.style.width = slides.clientWidth
 
 const sliderContent = [
 	{
-		content: `слайд 1`
+		url: `./imgForSlide/image-7.png`
 	}, 
 	{
-		content: `слайд 2`
+		url: `./imgForSlide/image-5.png`
 	},
 	{
-		content: `слайд 3`
+		url: `./imgForSlide/image-3.png`
 	},
 	{
-		content: `слайд 4`
+		url: `./imgForSlide/image-8.png`
 	}, 
 	{
-		content: `слайд 5`
+		url: `./imgForSlide/image-1.png`
 	} 
 ];
 
 let shift = 0;
 const width = -616;
+// const width = -sliderVisible.clientWidth;
 
-sliderContent.forEach(item => {
-	const li = document.createElement('li');
-	li.textContent = item.content;
-	li.classList.add('slide');
-	sliderList.append(li);
-})
+sliderContent.forEach((item, idx) => {
+	const img = document.createElement('img');
+	img.classList.add('slide');
+	img.alt = 'img-${idx + 1}';
+	img.src = item.url;
+	sliderList.append(img)
+});
+
+const dotsList = document.querySelectorAll('.slider_dot');
+
+const clearActive = () => {
+	dotsList.forEach(dot => {
+		dot.classList.contains('active') && dot.classList.remove('active');
+	})
+}
 
 btnLeft.onclick = () => {
 	if (shift === 0) {
@@ -50,7 +64,9 @@ btnLeft.onclick = () => {
 	} else {
 		shift = shift - width;
 	}	
+	const idx = shift / width
 	sliderList.style.left = shift + 'px';
+	console.log(shift / width);
 }
 
 btnRight.onclick = () => {
@@ -59,7 +75,9 @@ btnRight.onclick = () => {
 	} else {
 		shift = shift + width
 	}
+	
 	sliderList.style.left = shift + 'px';
+	console.log(shift / width);
 	}
 	
 
