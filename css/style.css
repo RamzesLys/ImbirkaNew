@@ -37,6 +37,9 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+  margin:0px;
+  padding:0px;
+  height:100%;
 }
 
 ul,
@@ -54,8 +57,12 @@ body {
 	/* max-width: 1440px; */
 }
 
+html, body {
+  height: 100%;
+}
+
 .wrapper {
-  max-height: 100vw;
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -65,14 +72,15 @@ body {
 	background-image: url(../img/BackgroundHeader.png);
 	background-position: top center;
 	background-repeat: repeat;
-	width: 100vw;
+	width: 100cqw;
   background-attachment: fixed;
 }
 
 .container {
-  min-width: 85vw;
+  min-width: 87%;
   margin: 0 auto;
   padding: 0 15px;
+  min-height: 100%;
 }
 
 .main {
