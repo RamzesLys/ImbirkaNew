@@ -107,11 +107,12 @@ body {
 	color:	#B96969;
 }
 
-.header_social-block {
+.header_social-block, .footer_social-block {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
   width: 28%;
+  align-items: center;
 }
 
 .header_social-block a img {
@@ -271,7 +272,7 @@ body {
   width: 600px;
   height: 450px;
   background-color: rgb(225, 229, 229);
-  border: 0.7em solid #B96969;
+  border: 0.5em solid #B96969;
   border-radius: 0.5em;
   text-align: center;
   line-height: 100px;
@@ -335,12 +336,38 @@ body {
 .slider_dot {
   height: 0.4em;
   width: 1.7em;
-  background-color: #F4D7CA;
+  background-color: #B96969;
   border-radius: 0.4em;
   box-shadow: #000 0.2em 0.2em 1em;
   cursor: pointer;
 }
 
+/* FOOTER */
+.footer {
+  display: flex;
+	flex-direction: row;
+	padding: 1em 0;
+	align-items: center;
+	justify-content: space-between;
+  border-top: #B96969 solid 0.2em;
+}
+
+.footer_logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.RzS_logo {
+  font-family: 'Orbitron', serif;
+	font-size: 1.5em;
+	color:	#B96969;
+}
+
+.footer_social-block a img {
+  width: 2.5em;
+  outline: 0.3em solid inherit;
+}
 
 
 
