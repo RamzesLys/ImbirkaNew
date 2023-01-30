@@ -113,11 +113,7 @@ body {
   gap: 1.5em;
   width: 28%;
   align-items: center;
-}
-
-.header_social-block a img {
-  width: 2.5em;
-  outline: 0.3em solid inherit;
+  justify-content: space-between;
 }
 
 [name="social_"] {
@@ -125,10 +121,10 @@ body {
   border-radius: 1em;
 }
 
-.header_social-block a img:hover {
-  width: 2.3em;
-  outline: 0.5em solid inherit;
-  transition: .3s ease-in-out;
+.header_social-block a img {
+  width: 2.5em;
+  padding-bottom: 0.3em;
+  border-bottom: solid 0.2em inherit;
 }
 
 .header_phone, .slogan_block-subscribe, .slogan_block-ordered {
@@ -147,6 +143,11 @@ body {
   border-radius: 0.3em;
   letter-spacing: 0.15em;
   box-shadow: #B96969 0.5em 0.5em 1em;
+}
+
+.header_phone:hover, .slogan_block-subscribe:hover, .slogan_block-ordered:hover {
+  box-shadow: #B96969 0.1em 0.1em 0.3em;
+  transition: all .2s ease-out;
 }
 
 .header_phone img {
@@ -238,7 +239,7 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat; */
 	width: 100%;
-	height: 70vh;
+	/* height: 70vh; */
   /* background-attachment: fixed; */
 }
 
@@ -253,7 +254,7 @@ body {
 .slider_visible {
   position: relative;
   width: 608px;
-  height: 450px;
+  height: 465px;
   overflow: hidden;
   margin: 1em 0;
 }
@@ -270,7 +271,7 @@ body {
 
 .slide {
   width: 600px;
-  height: 450px;
+  /* height: 450px; */
   background-color: rgb(225, 229, 229);
   border: 0.5em solid #B96969;
   border-radius: 0.5em;
@@ -306,13 +307,18 @@ body {
 
 .slider_button:first-child {
   left: 0;
-  box-shadow: #000 0.5em 0.5em 1em;
+  box-shadow: #B96969 0.5em 0.5em 1em;
 }
 
 .slider_button:last-child {
   right: 0;
   transform: rotate(180deg);
-  box-shadow: #000 -0.5em -0.5em 1em;
+  box-shadow: #B96969 -0.5em -0.5em 1em;
+}
+
+.slider_button:hover {
+  box-shadow: #B96969 0.1em 0.1em 0.2em;
+  transition: all .2s ease-out;
 }
 
 .slider_img {
@@ -338,12 +344,19 @@ body {
   width: 1.7em;
   background-color: #B96969;
   border-radius: 0.4em;
-  box-shadow: #000 0.2em 0.2em 1em;
+  box-shadow: #B96969 0.2em 0.2em 1em;
   cursor: pointer;
+}
+
+.slider_dot:hover {
+  box-shadow: none;
+  transition: all .2s ease-out;
+  background-color: #CE9999
 }
 
 /* FOOTER */
 .footer {
+  margin-top: 5em;
   display: flex;
 	flex-direction: row;
 	padding: 1em 0;
@@ -358,10 +371,14 @@ body {
   align-items: center;
 }
 
-.RzS_logo {
+.RzS_logo-desc {
   font-family: 'Orbitron', serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color:	#B96969;
+}
+
+.logo_RzS {
+  width: 5.5em;
 }
 
 .footer_social-block a img {
