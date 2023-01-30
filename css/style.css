@@ -52,12 +52,8 @@ a {
 
 body {
 	/* max-width: 1440px; */
-  background-color:	#F4D7CA;
-	background-image: url(../img/BackgroundHeader.png);
-	background-position: top center;
-	background-repeat: no-repeat;
-	width: 100%;
-  background-attachment: fixed;
+  
+  
 }
 
 .wrapper {
@@ -67,6 +63,12 @@ body {
   flex-direction: column;
   position: relative;
   justify-content: space-between;
+  background-color:	#F4D7CA;
+	background-image: url(../img/BackgroundHeader.png);
+	background-position: top center;
+	background-repeat: repeat;
+	width: 100%;
+  background-attachment: fixed;
 }
 
 .container {
@@ -110,7 +112,6 @@ body {
   flex-direction: row;
   gap: 1.5em;
   width: 28%;
-  
 }
 
 .header_social-block a img {
@@ -128,8 +129,6 @@ body {
   outline: 0.5em solid inherit;
   transition: .3s ease-in-out;
 }
-
-
 
 .header_phone, .slogan_block-subscribe, .slogan_block-ordered {
   cursor: pointer;
