@@ -51,9 +51,7 @@ a {
 }
 
 body {
-	/* max-width: 1440px; */
-  
-  
+	max-width: 1440px;
 }
 
 .wrapper {
@@ -66,7 +64,7 @@ body {
   background-color:	#F4D7CA;
 	background-image: url(../img/BackgroundHeader.png);
 	background-position: top center;
-	background-repeat: repeat;
+	background-repeat: repeat-y;
 	width: 100%;
   background-attachment: fixed;
 }
@@ -177,6 +175,10 @@ body {
   padding: 2em 0;
 }
 
+.slogan span {
+  display: inline-block;
+}
+
 .slogan_link-block {
   width: 100%;
   display: flex;
@@ -273,7 +275,7 @@ body {
   width: 600px;
   /* height: 450px; */
   background-color: rgb(225, 229, 229);
-  border: 0.5em solid #B96969;
+  border: 0.3em solid #B96969;
   border-radius: 0.5em;
   text-align: center;
   line-height: 100px;
