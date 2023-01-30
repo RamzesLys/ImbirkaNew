@@ -55,7 +55,7 @@ body {
 }
 
 .wrapper {
-  min-height: 100vw;
+  max-height: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -65,12 +65,12 @@ body {
 	background-image: url(../img/BackgroundHeader.png);
 	background-position: top center;
 	background-repeat: repeat;
-	width: 100%;
+	width: 100vw;
   background-attachment: fixed;
 }
 
 .container {
-  max-width: 90vw;
+  min-width: 85vw;
   margin: 0 auto;
   padding: 0 15px;
 }
