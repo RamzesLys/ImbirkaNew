@@ -51,11 +51,11 @@ a {
 }
 
 body {
-	max-width: 1440px;
+	/* max-width: 1440px; */
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -64,13 +64,13 @@ body {
   background-color:	#F4D7CA;
 	background-image: url(../img/BackgroundHeader.png);
 	background-position: top center;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	width: 100%;
   background-attachment: fixed;
 }
 
 .container {
-  max-width: 85%;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -170,7 +170,7 @@ body {
 
 .slogan {
   font-family: 'BanderaPro', serif;
-	font-size: 3em;
+	font-size: 2.7em;
 	color:	#B96969;
   padding: 2em 0;
 }
