@@ -95,7 +95,11 @@ btnRight.onclick = () => {
 	
 	//DOTS
 
-	dotsList.add
-
-
-
+	dotsList.forEach((dot, idx) => {
+		dot.onclick = () => {
+			clearActive();
+			dotsList[idx].classList.add('active');
+			shift = width * idx;
+			sliderList.style.left = shift + 'px';
+		}
+	});
