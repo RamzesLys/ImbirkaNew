@@ -481,7 +481,6 @@ html, body {
   height: 4em;
   opacity: 0.8;
   border-radius: 5em;
-  backdrop-filter: blur(1em);
   cursor: pointer;
   z-index: 1;
 	display: flex;
@@ -519,6 +518,7 @@ html, body {
 
 
 @media (max-width: 780px) {
+  
   .header_desc-social, .slider {
 		display: none;
 	}
