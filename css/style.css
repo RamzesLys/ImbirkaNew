@@ -402,10 +402,12 @@ html, body {
 }
 
 .slider_dot {
-  height: 0.4em;
-  width: 1.7em;
-  background-color: #B96969;
-  border-radius: 0.4em;
+  height: 0.6em;
+  width: 2em;
+  /* background-color: #B96969; */
+  background-color: inherit;
+  border: 0.5px solid #B96969;
+  border-radius: 0.3em;
   box-shadow: #B96969 0.2em 0.2em 1em;
   cursor: pointer;
 }
@@ -413,7 +415,15 @@ html, body {
 .slider_dot:hover {
   box-shadow: none;
   transition: all .2s ease-out;
-  background-color: #CE9999
+  background-color: #CE9999;
+  transform: scale(1.2);
+}
+
+.slider_dot.active {
+  box-shadow: none;
+  transition: all .2s ease-out;
+  background-color: #CE9999;
+  /* transform: scale(1.2); */
 }
 
 /* FOOTER */

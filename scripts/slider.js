@@ -16,6 +16,7 @@ const sliderList = document.getElementById('slider-list');
 const slides = document.querySelectorAll('.slide');
 const [btnLeft, btnRight] = document.getElementsByClassName('slider_button');
 const [sliderVisible] = document.getElementsByClassName('slider_visible');
+const [dotsListBlock] = document.querySelectorAll('.slider_dots-list');
 
 // sliderVisible.style.width = sliderVisible.clientWidth;
 // slides.style.width = slides.clientWidth
@@ -47,13 +48,20 @@ sliderContent.forEach((item, idx) => {
 	img.classList.add('slide');
 	img.alt = 'img-${idx + 1}';
 	img.src = item.url;
-	sliderList.append(img)
+
+	const dot = document.createElement('li');
+	dot.classList.add('slider_dot');
+
+	sliderList.append(img);
+	dotsListBlock.append(dot)
 });
 
 const dotsList = document.querySelectorAll('.slider_dot');
+dotsList[0].classList.add('active');
+
 
 const clearActive = () => {
-	dotsList.forEach(dot => {
+	dotsList.forEach (dot => {
 		dot.classList.contains('active') && dot.classList.remove('active');
 	})
 }
@@ -64,7 +72,9 @@ btnLeft.onclick = () => {
 	} else {
 		shift = shift - width;
 	}	
+	clearActive();
 	const idx = shift / width
+	dotsList[idx].classList.add('active');
 	sliderList.style.left = shift + 'px';
 	console.log(shift / width);
 }
@@ -75,9 +85,17 @@ btnRight.onclick = () => {
 	} else {
 		shift = shift + width
 	}
-	
+	clearActive();
+	const idx = shift / width;
+	dotsList[idx].classList.add('active');
+
 	sliderList.style.left = shift + 'px';
 	console.log(shift / width);
 	}
 	
+	//DOTS
+
+	dotsList.add
+
+
 
