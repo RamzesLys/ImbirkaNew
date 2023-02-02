@@ -145,7 +145,7 @@ html, body {
   display: flex;
   flex-direction: row;
   /* background-color: #B96969; */
-  background-color: rgba(185, 105, 105, 0.3);
+  background-color: rgba(185, 105, 105, 0.6);
   font-family: 'BanderaPro', serif;
 	font-size: 1.5em;
 	color:	#F4D7CA;
@@ -344,12 +344,12 @@ html, body {
 }
 
 .slider_button {
-  background-image: url(../img/ButtonNoise.png);
+  background-image: url(../img/ButtonNoise2.png);
   background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
-  background-color: #F4D7CA;
-  /* background-color: rgba(185, 105, 105, 0.5); */
+  /* background-color: #F4D7CA; */
+  background-color: rgba(244, 215, 202, 0.8);
   width: 4em;
   height: 4em;
   opacity: 0.5;
@@ -471,12 +471,12 @@ html, body {
 
 /* STICKY */
 .sticky_btn {
-	background-image: url(../img/ButtonNoise.png);
+	background-image: url(../img/ButtonNoise2.png);
   background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
   /* background-color: #B96969; */
-  background-color: rgba(185, 105, 105, 0.5);
+  background-color: rgba(185, 105, 105, 0.7);
   width: 4em;
   height: 4em;
   opacity: 0.8;
@@ -491,6 +491,7 @@ html, body {
 	right: 1em;
 	box-shadow: #B96969 0.5em 0.5em 1em;
   backdrop-filter: blur(1px);
+  transition: all .5s ease-in-out;
 }
 
 .sticky_btn:hover {
@@ -501,6 +502,9 @@ html, body {
 
 
 @media (max-width: 930px) {
+  .container {
+    max-width: 90%;
+  }
   .header_desc-social {
 		flex-direction: column;
 		row-gap: 1em;
@@ -516,6 +520,14 @@ html, body {
 	}
 }
 
+@media screen and (max-width: 870px) {
+  .container {
+    max-width: 95%;
+  }
+  .slide {
+    width: 500px;
+  }
+}
 
 @media (max-width: 780px) {
   
