@@ -109,16 +109,7 @@ btnRight.onclick = () => {
 const headerHamb = document.querySelector('.header_hamb');
 const menuHidden = document.querySelector('.header_hidden');
 
-// headerHamb.addEventListener('click', function () {
-//     headerHamb.classList.toggle('active');
-//     menuHidden.classList.toggle('active');
-// });
-
 	headerHamb.onclick = () => {
 		headerHamb.classList.toggle('active');
 		menuHidden.classList.toggle('active');
 	}
-
-// headerHamb.addEventListener('click', function(){
-// 	headerHamb.classList.add('active');
-// })
