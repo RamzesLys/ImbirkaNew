@@ -17,9 +17,9 @@ position();
   slides = document.querySelectorAll('.slider_item'),
   dots = document.querySelectorAll('.slider_dot');
 
-let index = 0;
+let index = 2;
 
-const activeSlide = n => {
+const activeSlide = (n) => {
   for (slide of slides) {
     slide.classList.remove('active');
   }
@@ -58,13 +58,6 @@ const prevSlide = () => {
   }
 }
 
-// dots.forEach((item, indexDot) => {
-//   item.addEventListener('click', () => {
-//     index = indexDot;
-//     prepareCurrentSlide(index);
-//   })
-// })
-
 dots.forEach((item, indexDot) => {
 	item.onclick = () => {
 		index = indexDot;
@@ -92,12 +85,12 @@ const menuHidden = document.querySelector('.header_hidden');
 
 	//ADAPTIVE
 
-const adaptiveWidth = window.innerWidth;
+// const adaptiveWidth = window.innerWidth;
 
-const resize = () => {
-	if (adaptiveWidth <= 770) {
-		gingerBread.style.top = 300 + 'px'
-	}
-}
+// const resize = () => {
+// 	if (adaptiveWidth <= 770) {
+// 		gingerBread.style.top = 300 + 'px'
+// 	}
+// }
 
-resize()
+// resize()
