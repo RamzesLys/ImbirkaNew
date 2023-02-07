@@ -1,5 +1,5 @@
 
-//POSITION
+  //POSITION
 const gingerBread = document.getElementById('ginger-bread');
 const mochi = document.getElementById('mochi');
 
@@ -11,100 +11,76 @@ const position = () => {
 }
 position();
 
-//SLIDER
-const sliderList = document.getElementById('slider-list');
-const slides = document.querySelectorAll('.slide');
-const [btnLeft, btnRight] = document.getElementsByClassName('slider_button');
-const [sliderVisible] = document.getElementsByClassName('slider_visible');
-const [dotsListBlock] = document.querySelectorAll('.slider_dots-list');
+  //SLIDER
+	const prev = document.getElementById('btn-prev'),
+  next = document.getElementById('btn-next'),
+  slides = document.querySelectorAll('.slider_item'),
+  dots = document.querySelectorAll('.slider_dot');
 
-// sliderVisible.style.width = sliderVisible.clientWidth;
-// slides.style.width = slides.clientWidth
+let index = 0;
 
-const sliderContent = [
-	{
-		url: `./imgForSlide/image-7.png`
-	}, 
-	{
-		url: `./imgForSlide/image-5.png`
-	},
-	{
-		url: `./imgForSlide/image-3.png`
-	},
-	{
-		url: `./imgForSlide/image-8.png`
-	}, 
-	{
-		url: `./imgForSlide/image-1.png`
-	} 
-];
-
-let shift = 0;
-const width = -616;
-// const width = -sliderVisible.clientWidth;
-
-sliderContent.forEach((item, idx) => {
-	const img = document.createElement('img');
-	img.classList.add('slide');
-	img.alt = 'img-${idx + 1}';
-	img.src = item.url;
-
-	const dot = document.createElement('li');
-	dot.classList.add('slider_dot');
-
-	sliderList.append(img);
-	dotsListBlock.append(dot)
-});
-
-const dotsList = document.querySelectorAll('.slider_dot');
-dotsList[0].classList.add('active');
-
-
-const clearActive = () => {
-	dotsList.forEach (dot => {
-		dot.classList.contains('active') && dot.classList.remove('active');
-	})
+const activeSlide = n => {
+  for (slide of slides) {
+    slide.classList.remove('active');
+  }
+  slides[n].classList.add('active');
 }
 
-btnLeft.onclick = () => {
-	if (shift === 0) {
-		shift = width * (sliderContent.length - 1);
-	} else {
-		shift = shift - width;
-	}	
-	clearActive();
-	const idx = shift / width
-	dotsList[idx].classList.add('active');
-	sliderList.style.left = shift + 'px';
-	console.log(shift / width);
+const activeDot = (n) => {
+  for (dot of dots) {
+    dot.classList.remove('active');
+  }
+  dots[n].classList.add('active');
 }
 
-btnRight.onclick = () => {
-	if (shift < width * (sliderContent.length - 2)) {
-		shift = 0;
-	} else {
-		shift = shift + width
+const prepareCurrentSlide = (ind) => {
+  activeSlide(ind);
+  activeDot(ind);
+}
+
+const nextSlide = () => {
+  if (index === slides.length - 1) {
+    index = 0;
+    prepareCurrentSlide(index);
+  } else {
+    index++;
+    prepareCurrentSlide(index);
+  }
+}
+
+const prevSlide = () => {
+  if (index === 0) {
+    index = slides.length - 1
+    prepareCurrentSlide(index);
+  } else {
+    index--;
+    prepareCurrentSlide(index);
+  }
+}
+
+// dots.forEach((item, indexDot) => {
+//   item.addEventListener('click', () => {
+//     index = indexDot;
+//     prepareCurrentSlide(index);
+//   })
+// })
+
+dots.forEach((item, indexDot) => {
+	item.onclick = () => {
+		index = indexDot;
+		prepareCurrentSlide(index);
 	}
-	clearActive();
-	const idx = shift / width;
-	dotsList[idx].classList.add('active');
+})
 
-	sliderList.style.left = shift + 'px';
-	console.log(shift / width);
-	}
-	
-	//DOTS
+next.onclick = () => {
+	nextSlide();
+}
 
-	dotsList.forEach((dot, idx) => {
-		dot.onclick = () => {
-			clearActive();
-			dotsList[idx].classList.add('active');
-			shift = width * idx;
-			sliderList.style.left = shift + 'px';
-		}
-	});
+prev.onclick = () => {
+	prevSlide()
+}
 
-	//HAMBURGER_MENU
+//HAMBURGER_MENU
 
 const headerHamb = document.querySelector('.header_hamb');
 const menuHidden = document.querySelector('.header_hidden');
@@ -113,3 +89,15 @@ const menuHidden = document.querySelector('.header_hidden');
 		headerHamb.classList.toggle('active');
 		menuHidden.classList.toggle('active');
 	}
+
+	//ADAPTIVE
+
+const adaptiveWidth = window.innerWidth;
+
+const resize = () => {
+	if (adaptiveWidth <= 770) {
+		gingerBread.style.top = 300 + 'px'
+	}
+}
+
+resize()
