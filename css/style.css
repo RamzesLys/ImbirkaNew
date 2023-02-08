@@ -121,7 +121,7 @@ html, body {
 	align-items: center;
 	justify-content: space-between;
 	/* width: 50%; */
-  gap: 1em;
+  gap: 3em;
 }
 
 [name="social_"] {
