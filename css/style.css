@@ -159,6 +159,7 @@ html, body {
   background-attachment: fixed;
   backdrop-filter: blur(1px);
   transition: all .3s ease-in-out;
+  z-index: 2;
 }
 
 .header_phone:hover, .slogan_block-subscribe:hover, .slogan_block-ordered:hover, .sticky_btn:hover {
@@ -275,7 +276,7 @@ html, body {
 
 .slogan {
   font-family: 'BanderaPro', serif;
-	font-size: 2.7em;
+	font-size: 3em;
 	color:	#B96969;
   padding: 2em 0;
   z-index: 2;
@@ -331,12 +332,13 @@ html, body {
 .img_mochi {
   position: absolute;
   right: -35em;
-  bottom: 1em;
+  bottom: 7em;
+  width: 30em;
+  z-index: 1;
 }
 
 .position2 {
   right: 0em;
-  bottom: 1em;
   transition: all 2s ease-out;
 }
 
@@ -520,12 +522,12 @@ html, body {
   .slogan {
     font-size: 2.5em;
   }
-  .img_gingerBread {
+  /* .img_gingerBread {
     width: 12em;
   }
   .img_mochi {
-		width: 20em;
-	}
+		width: 25em;
+	} */
 }
 
 @media screen and (max-width: 992px) {
@@ -537,11 +539,11 @@ html, body {
 	.slogan {
     font-size: 1.9em;
   }
-  .img_gingerBread {
+  /* .img_gingerBread {
     width: 9em;
-  }
+  } */
   .img_mochi {
-		width: 18em;
+		width: 25em;
 	}
  
   .header_phone, .slogan_block-subscribe, .slogan_block-ordered {
@@ -597,11 +599,11 @@ html, body {
     display: none;
   }
   .img_mochi {
-		width: 15em;
-    opacity: 0.5;
+		width: 20em;
+    opacity: 1;
 	}
   .position2 {
-    bottom: 9em;
+    opacity: 0.5;
   }
   .slider_dot {
     width: 0.6em;
