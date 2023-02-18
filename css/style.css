@@ -237,14 +237,16 @@ html, body {
   top: 0;
   left: 0;
   width: 105vw;
-  height: 100%;
+  /* height: 100%; */
+  height: 100vh;
   transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 1s ease-in-out;
-  gap: 10em;
+  /* gap: 10em; */
+  gap: 3em;
 }
 
 .header_hidden.active {
@@ -435,7 +437,7 @@ html, body {
   margin: 5% auto 5% auto;
   z-index: 3;
   max-width: 85%;
-  gap: 1%;
+  gap: 0.2%;
 }
 
 .slider_dot.active {
@@ -510,7 +512,8 @@ html, body {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	bottom: 9em;
+	/* bottom: 9em; */
+	top: 70%;
 	right: 1em;
 	box-shadow: #B96969 0.5em 0.5em 1em;
   backdrop-filter: blur(1px);
@@ -526,12 +529,11 @@ html, body {
   .slogan {
     font-size: 2.5em;
   }
-  /* .img_gingerBread {
-    width: 12em;
-  }
-  .img_mochi {
-		width: 25em;
-	} */
+	.slider_dot {
+		width: 0.7em;
+		height: 0.7em;
+	}
+ 
 }
 
 @media screen and (max-width: 992px) {
@@ -543,18 +545,17 @@ html, body {
 	.slogan {
     font-size: 1.9em;
   }
-  /* .img_gingerBread {
-    width: 9em;
-  } */
   .img_mochi {
 		width: 25em;
 	}
- 
   .header_phone, .slogan_block-subscribe, .slogan_block-ordered {
    letter-spacing: 0.05em;
    font-size: 1.3em;
-
   }
+	.slider_dot {
+		width: 0.6em;
+		height: 0.6em;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -584,21 +585,6 @@ html, body {
 	.content {
 		padding: 1em 0;
 	}
-
-  
-  /* .img_gingerBread {
-    top: -20em;
-    z-index: 1;
-    width: 7em;
-    left: 18em;
-    transform: rotate(70deg);
-  }
-
-  .position {
-   opacity: 0.5;
-    transform: rotate(-57deg);
-  
-  } */
   .img_gingerBread {
     display: none;
   }
@@ -609,10 +595,16 @@ html, body {
   .position2 {
     opacity: 0.5;
   }
+	.slider_dots-wrapper {
+		gap: 0.1%;
+	}
   .slider_dot {
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.3em;
+    height: 0.3em;
   }
+	.footer {
+		margin-top: 3em;
+	}
   .RzS_logo-desc {
     font-size: 1em;
   }
@@ -623,6 +615,7 @@ html, body {
 
 @media screen and (max-width: 575px) {
 .footer {
+	
 	flex-direction: column;
 }
 .footer_logo-block, .footer_social-block {
@@ -645,13 +638,17 @@ html, body {
 .header_phone svg {
 	width: 1.5em;
 }
+.slider_dot {
+	width: 0.2em;
+	height: 0.2em;
+}
 }
 
 @media (max-width: 480px) {
 
 }
 
-/* Iphone 5 */
+
 @media (max-width: 320px) {
 
 }
